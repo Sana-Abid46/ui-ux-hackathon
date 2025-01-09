@@ -43,6 +43,18 @@
 
 .inte {
   font-family: 'Integral CF', sans-serif;
-  font-weight: bolder;
  
+}
+
+.fonts {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: black;
+}
+
+.fontsss {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
 }

@@ -1,22 +1,22 @@
-import icon from "@/app/Vector (1).png";
-import heroImg from '@/app/Rectangle 2.png';
-// import { integralCF } from "@/styles/fonts";
+
 import Image from "next/image";
 import React from "react";
+import vector from "@/app/Vector (1).png";
+import heroImg from "@/app/Rectangle 2 (1).png"
 
 const Header = () => {
   return (
     <header className="bg-[#F2F0F1] pt-10 md:pt-24 overflow-hidden">
       <div className="md:max-w-frame mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-        <section className="max-w-frame px-9">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight uppercase">
-             Find Clothes <br /> That Matches <br /> Your Style
-          </h1>
-          <p className="text-black/60 text-sm lg:text-base mb-6 lg:mb-8 max-w-[545px] pt-5">
+        <section className="max-w-frame px-4">
+          <h2 className="text-4xl lg:text-[50px] lg:leading-[50px] mb-5 lg:mb-8 pl-8 font-extrabold">
+            FIND CLOTHES <br /> THAT MATCHES <br /> YOUR STYLE
+          </h2>
+          <p className="text-black/60 text-sm lg:text-base mb-6 lg:mb-8 max-w-[545px] pl-9">
             Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
           </p>
-          <div>
-            <button className="w-full md:w-52 mb-5 md:mb-12 inline-block text-center bg-black hover:bg-black/80 transition-all text-white px-14 py-4 rounded-full">
+          <div className="pl-7">
+            <button className="w-full md:w-52 mb-5 md:mb-12 inline-block text-center bg-black hover:bg-black/80 transition-all text-white px-14 py-4 rounded-full ">
               Shop Now
             </button>
           </div>
@@ -29,7 +29,7 @@ const Header = () => {
                 International Brands
               </span>
             </div>
-            <div className="ml-6 md:ml-0 h-12 md:h-full bg-black/10" />
+          
             <div className="flex flex-col ml-6 md:ml-0">
               <span className="font-bold text-2xl md:text-xl lg:text-3xl xl:text-[40px] xl:mb-2">
                 2000+
@@ -38,7 +38,7 @@ const Header = () => {
                 High-Quality Products
               </span>
             </div>
-            <div className="hidden sm:block sm:h-12 md:h-full ml-6 md:ml-0 bg-black/10"/>
+          
             <div className="flex flex-col w-full text-center sm:w-auto sm:text-left mt-3 sm:mt-0 sm:ml-6 md:ml-0">
               <span className="font-bold text-2xl md:text-xl lg:text-3xl xl:text-[40px] xl:mb-2">
                 30,000+
@@ -52,23 +52,21 @@ const Header = () => {
         <section className="relative md:px-4 min-h-[448px] md:min-h-[428px] bg-cover bg-top xl:bg-[center_top_-1.6rem] bg-no-repeat bg-[url('/images/header-res-homepage.png')] md:bg-[url('/images/header-homepage.png')]">
           <Image
             priority
-            src={icon}
+            src={vector}
             height={104}
             width={104}
             alt="big star"
             className="absolute right-7 xl:right-0 top-12 max-w-[76px] max-h-[76px] lg:max-w-24 lg:max-h-max-w-24 xl:max-w-[104px] xl:max-h-[104px] animate-[spin_4s_infinite]"
           />
-           {/* Background Image */}
-           <div className="w-auto h-full ">
-        <Image
-          src={heroImg}
-          alt="Hero Background"
-          className=" h-full object-center "
-        />
-        </div>
           <Image
             priority
-            src={icon}
+            src={heroImg}
+            alt="heroImg"
+            className="h-full w-auto"
+          />
+          <Image
+            priority
+            src={vector}
             height={56}
             width={56}
             alt="small star"

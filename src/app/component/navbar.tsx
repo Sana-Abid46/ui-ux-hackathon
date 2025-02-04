@@ -1,11 +1,12 @@
 'use client'
 
 import Image from "next/image";
-import vector from '@/app/Vector.png';
-import frame from '@/app/Frame.png';
-import icon from '@/app/Frame (1).png';
-import iconss from '@/app/Frame (2).png';
+import vector from '@/app/images/Vector.png';
+import frame from '@/app/images/icons8-search-50 (1).png';
+import icon from '@/app/images/Frame (1).png';
+import iconss from '@/app/images/Frame (2).png';
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,12 +43,12 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-8">
           <div className="flex items-center space-x-2">
-            <h2 className="text-[16px] text-black">Shop</h2>
+           <Link href='/'> <h2 className="text-[16px] text-black">Shop</h2></Link>
             <Image src={vector} alt="vector" className="w-[11.5px] h-[6.5px]" />
           </div>
-          <a href="#" className="text-[16px] font-normal text-black">On Sale</a>
-          <a href="#" className="text-[16px] font-normal text-black">New Arrivals</a>
-          <a href="#" className="text-[16px] font-normal text-black">Brands</a>
+          <a href="./casual" className="text-[16px] font-normal text-black">On Sale</a>
+          <Link href="./product" className="text-[16px] font-normal text-black">New Arrivals </Link>
+          <Link href="./mores" className="text-[16px] font-normal text-black">Brands</Link>
         </div>
 
         {/* Search Bar */}
@@ -63,12 +64,12 @@ export default function Navbar() {
         {/* Icons (Mobile & Desktop) */}
         <div className="flex items-center space-x-6 ml-auto lg:ml-8">
           <div className="lg:hidden flex space-x-4">
-            <Image src={frame} alt="search icon" className="w-6 h-6 text-black" /> {/* Black color for mobile */}
-            <Image src={icon} alt="icon" className="w-6 h-6" />
+            <Image src={frame} alt="search icon" className="w-6 h-6" /> {/* Black color for mobile */}
+            <Link href='./cart'><Image src={icon} alt="icon" className="w-6 h-6 cursor-pointer" /></Link>
             <Image src={iconss} alt="icon" className="w-6 h-6" />
           </div>
           <div className="hidden lg:flex items-center space-x-6">
-            <Image src={icon} alt="icon" className="w-6 h-6" />
+           <Link href='./cart'> <Image src={icon} alt="icon" className="w-6 h-6 cursor-pointer" /></Link>
             <Image src={iconss} alt="icon" className="w-6 h-6" />
           </div>
         </div>
@@ -78,12 +79,13 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="lg:hidden bg-white shadow-md">
           <div className="flex flex-col space-y-4 p-6">
-            <a href="#" className="text-[16px] font-bold text-black">Shop</a>
+            <a href="/" className="text-[16px] font-bold text-black">Shop</a>
             <a href="#" className="text-[16px] font-normal text-black">On Sale</a>
-            <a href="#" className="text-[16px] font-normal text-black">New Arrivals</a>
-            <a href="#" className="text-[16px] font-normal text-black">Brands</a>
+            <a href="./product" className="text-[16px] font-normal text-black">New Arrivals</a>
+            <a href="./mores" className="text-[16px] font-normal text-black">Brands</a>
           </div>
         </div>
+        
       )}
     </nav>
   );

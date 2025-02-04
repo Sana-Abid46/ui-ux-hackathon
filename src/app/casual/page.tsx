@@ -1,8 +1,7 @@
 'use client';
 import React, { useState } from "react";
-import { FaChevronLeft, FaChevronRight, FaFilter } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight,} from "react-icons/fa";
 import Card from "../component/card";
-import image1 from "@/app/images/Frame 33-remove-bg-io.png";
 import frame10 from "@/app/images/Frame 10 (1).png";
 import image2 from "@/app/images/Frame 34-remove-bg-io.png";
 import frame from "@/app/images/Frame 10o.png";
@@ -14,16 +13,15 @@ import image6 from "@/app/images/image 10.png";
 import image7 from "@/app/images/image 7 (1).png";
 import image8 from "@/app/images/image 8 (1).png";
 import image9 from "@/app/images/image 9 (2).png";
-import { AlignJustify } from "lucide-react";
 import { Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import Image from "next/image";
 import iiii from "@/app/images/image 8.png";
 
-const categories = ["T-shirts", "Shirts", "Shorts", "Pants"];
-const colors = ["#000", "#fff", "#f00", "#ff0", "#00f", "#800080", "#ff69b4", "#90EE90"];
-const sizes = ["S", "M", "L", "XL", "XXL"];
+// const categories = ["T-shirts", "Shirts", "Shorts", "Pants"];
+// const colors = ["#000", "#fff", "#f00", "#ff0", "#00f", "#800080", "#ff69b4", "#90EE90"];
+// const sizes = ["S", "M", "L", "XL", "XXL"];
 const dressStyles = ["Casual", "Formal", "Gym", "Party"];
 
 const ProductListing = () => {

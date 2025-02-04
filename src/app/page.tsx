@@ -1,4 +1,4 @@
-import Footer from "./component/footer";
+
 import HeroSection from "./component/heroSec";
 import HomeP from "./component/homep-p1";
 import Logos from "./component/logos";

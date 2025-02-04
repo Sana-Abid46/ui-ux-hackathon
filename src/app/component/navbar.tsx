@@ -46,7 +46,7 @@ export default function Navbar() {
            <Link href='/'> <h2 className="text-[16px] text-black">Shop</h2></Link>
             <Image src={vector} alt="vector" className="w-[11.5px] h-[6.5px]" />
           </div>
-          <a href="./casual" className="text-[16px] font-normal text-black">On Sale</a>
+          <Link href="./casual" className="text-[16px] font-normal text-black">On Sale</Link>
           <Link href="./product" className="text-[16px] font-normal text-black">New Arrivals </Link>
           <Link href="./mores" className="text-[16px] font-normal text-black">Brands</Link>
         </div>
@@ -79,10 +79,10 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="lg:hidden bg-white shadow-md">
           <div className="flex flex-col space-y-4 p-6">
-            <a href="/" className="text-[16px] font-bold text-black">Shop</a>
-            <a href="#" className="text-[16px] font-normal text-black">On Sale</a>
-            <a href="./product" className="text-[16px] font-normal text-black">New Arrivals</a>
-            <a href="./mores" className="text-[16px] font-normal text-black">Brands</a>
+            <Link href="/" className="text-[16px] font-bold text-black">Shop</Link>
+            <Link href="#" className="text-[16px] font-normal text-black">On Sale</Link>
+            <Link href="./product" className="text-[16px] font-normal text-black">New Arrivals</Link>
+            <Link href="./mores" className="text-[16px] font-normal text-black">Brands</Link>
           </div>
         </div>
         

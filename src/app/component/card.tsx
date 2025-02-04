@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 
-const Card = ({ frame, src, style, alt, heading, Rating, price, disprice, redbtn }: { frame?: any, src: any, alt: string, heading: string, Rating: string, price: string, disprice?: string, redbtn?: string, style?: any}) => {
+const Card = ({ frame, src, alt, heading, Rating, price, disprice, redbtn }: { frame?: any, alt?: any, src: any, heading: string, Rating: string, price: string, disprice?: string, redbtn?: string}) => {
   return (
     <main>
       <div className="w-[295px] h-[298px] top-[1104px] left-[415px] rounded-[20px] bg-[#F0EEED] ">
         <div className="" >
-          <Image src={src} alt="alt" className="py-9 mx-14 " />
+          <Image src={src} alt={alt} className="py-9 mx-14 " />
         </div>
       </div>
 
